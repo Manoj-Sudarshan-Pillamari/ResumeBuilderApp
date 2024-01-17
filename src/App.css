@@ -1,0 +1,36 @@
+.App {
+    font-family:'Times New Roman', Times, serif;
+}
+
+.resume-main {
+    margin : 1% 2%;
+    gap: 0%;
+}
+
+h1 {
+    margin: 0;
+    padding: 1%;
+    text-align: center;
+    background-color:gainsboro;
+}
+
+h3 {
+    margin: 0;
+    padding-top: 0.8%;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+ul {
+    margin: 0.5%;
+}
+
+p, span {
+    margin: 0;
+}
+
+.content {
+    border-bottom: solid 1px gainsboro;
+    padding: 0.3% 0%;
+    font-size: 18px;
+}

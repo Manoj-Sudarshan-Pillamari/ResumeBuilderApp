@@ -1,9 +1,17 @@
 import React from 'react'
 
-const Experience = () => {
+const Experience = (props) => {
   return (
-    <div>
-      
+    <div className='content'>
+      {props.experience.map((expData)=>{
+        return(
+        <div key={expData.yoj} style={{paddingBottom:"1%"}}>
+          <span><b style={{fontWeight:"bolder", fontSize:"19px"}}>{expData.company},</b>&nbsp;&nbsp;<i>{expData.yoj} - {expData.yoe}</i></span>
+          <p style={{borderBottom:"1px dotted", maxWidth:"fit-content", fontWeight:"bold"}}><i>Role: {expData.role}</i></p>
+          <p>{expData.about}</p>
+        </div>
+      )}
+      )}
     </div>
   )
 }

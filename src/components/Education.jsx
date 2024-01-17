@@ -1,9 +1,18 @@
 import React from 'react'
 
-const Education = () => {
+const Education = (props) => {
   return (
-    <div>
-      
+    <div className='content'>
+        {props.education.map((edData)=>{
+          return(
+          <div key={edData.year}>
+            <ul>
+              <li>
+                <b>{edData.std},</b>&nbsp;&nbsp;<i>{edData.year}</i>
+              </li>
+            </ul>
+          </div>
+          )})}
     </div>
   )
 }
