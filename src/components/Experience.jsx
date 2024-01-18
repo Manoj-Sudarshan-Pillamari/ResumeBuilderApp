@@ -3,6 +3,7 @@ import React from 'react'
 const Experience = (props) => {
   return (
     <div className='content'>
+            <h3>Experience</h3>
       {props.experience.map((expData)=>{
         return(
         <div key={expData.yoj} style={{paddingBottom:"1%"}}>
