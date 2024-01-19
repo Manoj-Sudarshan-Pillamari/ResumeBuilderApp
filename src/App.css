@@ -1,17 +1,21 @@
 .App {
     font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
 
 .resume-main {
-    margin : 1% 2%;
+    margin : 0% 2%;
     gap: 0%;
 }
 
-h1 {
-    margin: 0;
+.header {
+    display: flex;
     padding: 1%;
     text-align: center;
-    background-color:gainsboro;
+    border-bottom: solid 2px gray;
+    align-items: baseline;
+    justify-content: space-evenly;
 }
 
 h3 {

@@ -3,7 +3,7 @@ import React from 'react'
 const Education = (props) => {
   return (
     <div className='content'>
-            <h3>Education</h3>
+        <h3>Education</h3>
         {props.education.map((edData)=>{
           return(
           <div key={edData.year}>
