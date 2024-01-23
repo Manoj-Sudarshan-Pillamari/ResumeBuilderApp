@@ -19,6 +19,12 @@ function App() {
     backgroundColor: "black"
   }
 
+  const handleClick = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    window.print()
+  }
+
   return (
     <div className="App" style={mode ? darkMode : lightMode}>
       <div className='header'>
@@ -28,10 +34,9 @@ function App() {
         <Switch style={{margin:0,padding:0}} onChange={handleSwitch}/>&nbsp;
         Dark
         </div>
-        {/* <div style={{ float: "right", fontSize: "20px", paddingTop: "0.8%" }}> */}
-        {/* </div> */}
       </div>
       <Resume themeMode={mode} />
+      <center><button type='submit' className='print-resume' onClick={handleClick}>Print</button></center>
     </div>
   );
 }
